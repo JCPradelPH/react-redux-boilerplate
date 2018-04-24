@@ -1,0 +1,39 @@
+%horizontal{
+  @include flexed-layout;
+  @include flex-direction(row);
+}
+%vertical{
+  @include flexed-layout;
+  @include flex-direction(column);
+}
+%justify-content-flex-end { @include justify-content(flex-end); }
+%justify-content-flex-start { @include justify-content(flex-start); }
+%justify-content-center { @include justify-content(center); }
+%justify-content-space-around { @include justify-content(space-around); }
+%justify-content-space-between { @include justify-content(space-between); }
+%align-self-center { @include align-self(center); }
+%align-self-baseline { @include align-self(baseline); }
+%align-self-stretch { @include align-self(stretch); }
+%align-self-flex-start { @include align-self(flex-start); }
+%align-self-flex-end { @include align-self(flex-end); }
+%align-content-center { @include align-content(center); }
+%align-content-baseline { @include align-content(baseline); }
+%align-content-stretch { @include align-content(stretch); }
+%align-content-flex-start { @include align-content(flex-start); }
+%align-content-flex-end { @include align-content(flex-end); }
+
+%input-def-props{
+  padding:$input-def-pad;
+  border-radius:$input-def-border-radius;
+}
+
+%input-ov-outline{
+  outline-color: fade-out($sec-color,0.5);
+  border-color: darken($sec-color,5%);
+}
+%btn-template{
+  outline-color: fade-out($sec-color,0.5);
+  border-color: darken($sec-color,5%);
+  background: $sec-color;
+  &:active{ background: lighten($sec-color,20%); }
+}

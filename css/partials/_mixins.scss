@@ -1,0 +1,45 @@
+@mixin grid-layout($templateRow){
+  display:grid;
+  display:-ms-grid;
+  grid-template-rows: $templateRow;
+  -ms-grid-rows: $templateRow;
+}
+@mixin flexed-layout{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+@mixin flex-direction($d){
+  //row | column
+  flex-direction: $d;
+  -moz-flex-direction: $d;
+  -ms-flex-direction: $d;
+  -o-flex-direction: $d;
+  -webkit-flex-direction: $d;
+}
+@mixin justify-content($d){
+  //flex-start | flex-end | center | space-around | space-between
+  justify-content: $d;
+  -moz-justify-content: $d;
+  -ms-justify-content: $d;
+  -o-justify-content: $d;
+  -webkit-justify-content: $d;
+}
+@mixin align-self($d){
+  //center | baseline | stretch | flex-start | flex-end
+  align-self: $d;
+  -moz-align-self: $d;
+  -ms-align-self: $d;
+  -o-align-self: $d;
+  -webkit-align-self: $d;
+}
+@mixin align-content($d){
+  //center | baseline | stretch | flex-start | flex-end
+  align-content: $d;
+  -moz-align-content: $d;
+  -ms-align-content: $d;
+  -o-align-content: $d;
+  -webkit-align-content: $d;
+}

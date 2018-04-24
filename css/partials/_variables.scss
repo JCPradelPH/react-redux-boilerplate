@@ -1,0 +1,10 @@
+$main-color: rgb(0,91,151); // blue
+$sec-color: complement($main-color);
+$dkgray: #3e3e3e;
+$blue-shade: lighten(#0062cc,20%);
+$lt-gray: rgb(245,245,245);
+$dk-gray: darken($lt-gray,20%);
+$hm-btn-w: 250px;
+$input-def-pad: 7px;
+$input-def-border-radius: 5px;
+$video-dimens: 250px;
